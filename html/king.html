@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: initial;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .a {
+        background-color: rgb(13, 13, 103);
+        color: rgb(247, 244, 244);
+        height: 20vh;
+        font-size: 3em;
+
+    }
+
+    .c {
+        background-color: rgb(255, 255, 255);
+        height: 30%;
+    }
+
+    .b {
+        background-color: yellow;
+        color: rgb(120, 120, 156);
+    }
+
+    .d {
+        background-color: whitesmoke;
+        height: 40vh;
+    }
+
+    .d1 {
+        margin-top: 10em;
+    }
+
+    .d2 {
+        width: 18vw;
+    }
+
+    .d3 {
+        margin-right: 4%;
+        font-size: 100%;
+    }
+
+    .d4 {
+        margin-right: 13%;
+        font-size: 100%;
+    }
+
+    .d5 {
+        margin-bottom: 40%;
+    }
+    .d6{
+        background-color: rgb(13, 13, 103);;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="a">
+            <div class="d6">
+                <h4 class="d5">Login</h4>
+            </div>
+        </div>
+        <div class="c">
+            <center>
+                <br>
+                <h3>WELCOME BACK</h3>
+                <br><br>
+                <h3 class="d3">Username or Verified Mobile <br></h3>
+                <input type="text" placeholder="Username or Verified Mobile" class="d2">
+                <br> <br>
+                <h3 class="d4">password <br></h3>
+                <input type="password" placeholder="password" class="d2">
+                <br> <br>
+                <button><a href="../pic/Screenshot 2024-08-03 at 16.34.55.png">forgeton password </a></button>
+                <button><a href="../pic/Screenshot 2024-08-03 at 16.34.22.png" #> login</a></button>
+
+            </center>
+        </div>
+        <br><br> <br>
+        <div class="d">
+            <center>
+                <br> <br> <br><br>
+                <h4>DON'T HAVE AN ACCOUNT</h4>
+                <p>If you dont yet have an account, not to worry! <br>
+                    You can create a new account in a few steps.</p>
+                <button class="b">sign up today</button>
+                <script>
+
+
+                    if ('WebSocket' in window) {
+                        (function () {
+                            function refreshCSS() {
+                                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                                var head = document.getElementsByTagName("head")[0];
+                                for (var i = 0; i < sheets.length; ++i) {
+                                    var elem = sheets[i];
+                                    var parent = elem.parentElement || head;
+                                    parent.removeChild(elem);
+                                    var rel = elem.rel;
+                                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                                    }
+                                    parent.appendChild(elem);
+                                }
+                            }
+                            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                            var address = protocol + window.location.host + window.location.pathname + '/ws';
+                            var socket = new WebSocket(address);
+                            socket.onmessage = function (msg) {
+                                if (msg.data == 'reload') window.location.reload();
+                                else if (msg.data == 'refreshcss') refreshCSS();
+                            };
+                            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                                console.log('Live reload enabled.');
+                                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                            }
+                        })();
+                    }
+                    else {
+                        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+                    }
+
+
+                </script>
+            </center>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../CSS/animation.css">
+
+<body>
+    <style>
+        * {
+            box-sizing: initial;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .a {
+            height: 20vh;
+            animation-name: a;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+
+        @keyframes a {
+            0% {
+                left: 0%;
+                top: 0%;
+            }
+
+            25% {
+                left: 60%;
+                top: 0%;
+                width: 20%;
+            }
+
+            30% {
+                top: 20%;
+                left: 60%;
+                height: 30%;
+            }
+
+            40% {
+                left: 40%;
+                top: 10%;
+                width: 30%;
+            }
+
+            50% {
+                left: 40%;
+                top: 0%;
+            }
+        }
+
+        .c {
+            height: 30vh;
+            animation-name: c1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes c1 {
+            0% {}
+
+            10% {
+                background-image: url(Screenshot\ 2024-08-01\ at\ 21.06.09.png);
+                width: 20%;
+            }
+
+            20% {
+                background-image: url(Screenshot\ 2024-08-02\ at\ 16.17.26.png);
+                width: 20%;
+            }
+
+            30% {
+                background-image: url(Screenshot\ 2024-08-02\ at\ 17.04.11.png);
+                width: 20%;
+            }
+
+            40% {
+                background-image: url(Screenshot\ 2024-08-03\ at\ 16.34.22.png);
+                width: 20%;
+            }
+
+            50% {
+                 background-image: url(Screenshot\ 2024-08-03\ at\ 16.34.39.png);
+                width: 20%;
+            }
+
+            60% {
+                background-image: url(Screenshot\ 2024-08-03\ at\ 16.34.51.png);
+                width: 20%;
+            }
+        }
+    </style>
+    <div class="c">
+        <div>
+            <div>
+                <img src="../pic/Screenshot 2024-08-03 at 16.34.22.png" alt="" class="a">
+            </div>
+            <div>
+                <img src="../pic/Screenshot 2024-08-03 at 16.34.55.png" alt="" class="b">
+            </div>
+        </div>
+    </div> 
+</body>
+
+</html>

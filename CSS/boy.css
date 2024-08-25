@@ -1,0 +1,28 @@
+a{
+    color: green;
+}
+.boy{
+    color: blue ;
+}
+.bg{
+    background-color: red;
+    height: 50em;
+    width: 80%;
+    margin-left: 10%;
+}
+.gpt{
+    text-align: center;
+}
+.goat{
+    background-color: aquamarine;
+    height: 20em;
+}
+.edge{
+    border-style: dotted;
+    border-color: aquamarine; ;
+}
+.dd{
+    border-style: double;
+    border-color: rgb(4, 4, 51);
+}
+
